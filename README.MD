@@ -1,0 +1,1 @@
+# В IDE PyCHarm запустить файл run.py напряму в pycharm
