@@ -1,0 +1,9 @@
+<h1>Каталог</h1>
+
+    <ul>
+        {% for item in objects_list %}
+        <li>
+            <a href="/bouquet-list/?id={{item.id}}">{{item.name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
