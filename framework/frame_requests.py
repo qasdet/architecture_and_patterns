@@ -20,7 +20,6 @@ class PostRequests:
             return {item.split('=')[0]: item.split('=')[1] for item in data.split('&')}
         return dict()
 
-
     @staticmethod
     def get_wsgi_input_data(env) -> bytes:
         content_length_data = env.get('CONTENT_LENGTH')
@@ -40,4 +39,3 @@ class PostRequests:
         data = self.get_wsgi_input_data(environ)
 
         return self.parse_wsgi_input_data(data)
-

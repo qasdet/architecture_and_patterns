@@ -6,7 +6,7 @@ from sqlite3 import connect
 from framework.common import *
 
 
-connection = connect('site_db.sqlite')
+connection = connect(DB_name)
 
 
 # абстрактный пользователь

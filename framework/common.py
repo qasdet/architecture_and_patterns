@@ -1,8 +1,13 @@
-from patterns.creational_patterns import Logger, Engine
-from patterns.behavioral_patterns import Subject
-from patterns.creational_patterns import CourseFactory
+from patterns.creational_patterns import Logger
+
 
 logger = Logger('main')
+DB_name = 'site_db.sqlite'
+FILE_CREATE_DATABASE_COMMAND = 'create_db.sql'
+DEFAULT_PORT = 8080
+DEFAULT_ADDRESS = ''
+
+
 class CreateCategory:
     @staticmethod
     def create(data, site):
@@ -64,4 +69,5 @@ class DbDeleteException(Exception):
 
 class RecordNotFoundException(Exception):
     def __init__(self, message):
-        super().__init__(f'Record not found: {message}')
+        super().__init__(f'Record not found: {message}'
+                         )

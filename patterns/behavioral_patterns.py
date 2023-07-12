@@ -119,4 +119,3 @@ class FileWriter:
     def write(self, text):
         with open(self.file_name, 'a', encoding='utf-8') as f:
             f.write(f'{text}\n')
-
