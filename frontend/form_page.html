@@ -1,0 +1,17 @@
+<h1>
+    {{curr_line}}
+</h1>
+<br>
+<div class="lforms">
+    <div class="text">
+        {{page*lines_in}}
+            <div class="lform">{{line_form#line}}</div>
+        {{*}}
+    </div>
+</div>
+<br>
+{{forms}}
+<br>
+{{line_id?>0}}
+    <a class="cformbutt" href="javascript:;" onclick="backPage();">Назад</a>
+{{?}}
